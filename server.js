@@ -14,7 +14,8 @@ const types = {
 
 http.createServer((request, response) => {
   const requested = decodeURIComponent((request.url || '/').split('?')[0]);
-  const relativePath = requested === '/' ? 'index.html' : requested.replace(/^\/+/, '');
+  const cleanPath = requested.replace(/^\/+/, '');
+  const relativePath = requested === '/' ? 'index.html' : (requested.endsWith('/') ? path.join(cleanPath, 'index.html') : cleanPath);
   const filePath = path.resolve(root, relativePath);
 
   if (!filePath.startsWith(root + path.sep) && filePath !== path.join(root, 'index.html')) {
