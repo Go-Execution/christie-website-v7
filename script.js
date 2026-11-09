@@ -31,9 +31,9 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 
-document.querySelector('[data-story-button]').addEventListener('click', () => dialog.showModal());
-document.querySelector('[data-dialog-close]').addEventListener('click', () => dialog.close());
-dialog.addEventListener('click', (event) => {
+document.querySelector('[data-story-button]')?.addEventListener('click', () => dialog?.showModal());
+document.querySelector('[data-dialog-close]')?.addEventListener('click', () => dialog?.close());
+dialog?.addEventListener('click', (event) => {
   if (event.target === dialog) dialog.close();
 });
 

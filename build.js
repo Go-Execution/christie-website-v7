@@ -3,8 +3,8 @@ const path = require('node:path');
 
 const root = __dirname;
 const output = path.join(root, 'dist');
-const files = ['index.html', 'styles.css', 'script.js', 'inner.css', 'inner.js'];
-const pages = ['about', 'music', 'videos', 'shows', 'photos', 'news', 'teaching', 'music-production', 'contact'];
+const files = ['index.html', 'styles.css', 'home-redesign.css', 'songbird.css', 'script.js', 'inner.css', 'inner.js'];
+const pages = ['about', 'music', 'videos', 'shows', 'photos', 'news', 'teaching', 'music-production', 'contact', 'songbird'];
 
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });

@@ -3,213 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Songbird is a world of original music, stories, and imagination created by Christie Kanska." />
-    <title>Songbird — Find Your Voice</title>
+    <meta name="description" content="Official website of Christie Kanska — vocalist, pianist, composer, music educator, and producer." />
+    <title>Christie Kanska — Artist &amp; Composer</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♪</text></svg>" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/home-redesign.css" />
   </head>
-  <body>
+  <body class="artist-home">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="/" aria-label="Songbird home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 62 52" role="img">
-            <path d="M12 35c6-1 10-5 12-10-6 2-11 0-14-4 7 0 13-3 17-9 0 8 4 14 12 17 6 2 11 1 16-1-4 7-10 11-18 11H26c-7 0-12 3-15 8 0-5 0-8 1-12Z" />
-            <circle cx="38" cy="25" r="2" />
-            <path class="beak" d="m46 27 10 4-10 3Z" />
-          </svg>
-        </span>
-        <span>SONG<span>bird</span></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
-        <span></span><span></span><span></span>
-        <span class="sr-only">Open menu</span>
-      </button>
-
+      <a class="artist-brand" href="/" aria-label="Christie Kanska home"><span class="artist-brand__name">Christie Kanska</span><span class="artist-brand__role">Artist · Composer</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a aria-current="page" href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/music/">Music</a>
-        <a href="/videos/">Videos</a>
-        <a href="/shows/">Shows</a>
-        <a href="/photos/">Photos</a>
-        <a href="/news/">News</a>
-        <a href="/teaching/">Teaching</a>
-        <a href="/music-production/">Music Production</a>
-        <a href="/contact/">Contact</a>
+        <a aria-current="page" href="/">Home</a><a href="/about/">About</a><a href="/music/">Music</a><a href="/songbird/">Songbird</a><a href="/videos/">Videos</a><a href="/shows/">Shows</a><a href="/photos/">Photos</a><a href="/news/">News</a><a href="/teaching/">Teaching</a><a href="/music-production/">Music Production</a><a href="/contact/">Contact</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="home" aria-labelledby="hero-title">
-        <img class="hero-art" src="/assets/seaside-songbird-and-happy-dogs.png?v=2" alt="A colorful Songbird singing beside three happy dogs on a sunlit seashore" />
-        <div class="hero-wash"></div>
-        <div class="hero-notes" aria-hidden="true"><i>♪</i><i>♫</i><i>♪</i></div>
-        <div class="hero-content">
-          <p class="eyebrow">Music · Stories · Imagination</p>
-          <h1 id="hero-title">Every voice<br /><em>deserves wings.</em></h1>
-          <p class="hero-copy">Enter a gentle world where songs open doors, stories nurture courage, and children discover the wonder of their own voice.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#journey">Explore the world <span aria-hidden="true">→</span></a>
-            <a class="text-link" href="#about"><span class="play-icon" aria-hidden="true">♥</span> Discover our story</a>
-          </div>
+      <section class="artist-hero" aria-labelledby="artist-title">
+        <div class="artist-hero__copy">
+          <p class="eyebrow">Vocalist · Pianist · Composer</p>
+          <h1 id="artist-title">Christie<br /><em>Kanska</em></h1>
+          <p class="artist-hero__intro">A life in music—composed across cultures, performed with heart, and shared through every voice she teaches.</p>
+          <div class="artist-hero__actions"><a class="button button-primary" href="#latest-release">Discover the latest release <span>↓</span></a><a class="artist-text-link" href="/about/">Meet Christie <span>→</span></a></div>
+          <div class="artist-hero__note"><span>Now presenting</span><strong>“I Love the Dogs”</strong></div>
         </div>
-        <p class="art-credit">Illustration by Naira Sochakian<br />under Christie’s artistic direction</p>
-        <a class="scroll-cue" href="#about" aria-label="Scroll to our story"><span></span>Begin the journey</a>
+        <figure class="artist-hero__portrait"><img src="/assets/christie/christie-and-zk-keyboard.jpg" alt="Christie Kanska with her musical collaborator ZK beside a keyboard" /><figcaption>Christie Kanska with longtime musical collaborator ZK</figcaption></figure>
+        <span class="artist-hero__signature" aria-hidden="true">CK</span>
       </section>
 
-      <section class="intro section" id="about">
-        <div class="intro-ornament" aria-hidden="true">❦</div>
-        <div class="section-heading reveal">
-          <p class="eyebrow">Meet Christie Kanska</p>
-          <h2>A life composed<br /><em>across cultures.</em></h2>
-        </div>
-        <div class="intro-grid">
-          <div class="intro-lead reveal">
-            <p><strong>Vocalist, pianist, composer, choral director, singer-songwriter, and music educator.</strong></p>
-          </div>
-          <div class="intro-body reveal">
-            <p>Born in Yerevan, Armenia, Christie began playing piano at seven. After classical piano, jazz and contemporary music studies, and a Fine Arts degree, she moved to Greece in 1995 and joined the vocal faculty of the New Odeon of Thessaloniki and Filippos Nakas Odeion Conservatory.</p>
-            <p>A Berklee College of Music scholarship brought her to Boston, where she completed a Bachelor of Music in Professional Music in 2004. Her journey has since taken her from concert halls and jazz clubs to classrooms and recording studios across Europe, India, the Caribbean, and the United States.</p>
-            <a class="arrow-link" href="#journey">Explore her journey <span>→</span></a>
-          </div>
+      <section class="latest-release section" id="latest-release" aria-labelledby="latest-title">
+        <div class="latest-release__art reveal"><img src="/assets/christie/christie-with-dog.jpg" alt="Artwork of Christie Kanska holding a dog beside her red keyboard" /><p>Original project artwork for “I Love the Dogs”</p></div>
+        <div class="latest-release__copy reveal">
+          <p class="eyebrow">Latest release</p><h2 id="latest-title">I Love<br /><em>the Dogs</em></h2>
+          <p class="release-lead">A joyful new song from Christie’s evolving children’s music world—written to invite young voices to sing, move, imagine, and celebrate the companionship of dogs.</p>
+          <p>“I Love the Dogs” opens the door to <strong>Songbird</strong>, Christie’s larger creative project bringing original music, storytelling, and the stage together for children and families.</p>
+          <div class="release-actions"><a class="button button-ink" href="/songbird/">Enter the Songbird world <span>→</span></a><a class="arrow-link" href="https://www.youtube.com/@Christie119" target="_blank" rel="noopener">Follow Christie on YouTube <span>↗</span></a></div>
         </div>
       </section>
 
-      <section class="world section" id="journey" aria-labelledby="world-title">
-        <div class="world-heading reveal">
-          <p class="eyebrow light">Artist · Educator · Producer</p>
-          <h2 id="world-title">A world in music.</h2>
-          <p>Christie’s work brings performance, education, and creative production together.</p>
-        </div>
-        <div class="path-grid">
-          <article class="path-card path-music reveal">
-            <span class="card-number">01</span>
-            <div class="card-icon" aria-hidden="true">♪</div>
-            <div class="card-copy">
-              <p class="card-kicker">Voice · Piano · Composition</p>
-              <h3>Performer</h3>
-              <p>From jazz quartets and orchestras to international festivals, Christie performs with honesty, warmth, and a deeply personal musical voice.</p>
-              <span class="coming-label">Jazz · Bossa Nova · World Music</span>
-            </div>
-          </article>
-          <article class="path-card path-book reveal">
-            <span class="card-number">02</span>
-            <div class="card-icon" aria-hidden="true">✦</div>
-            <div class="card-copy">
-              <p class="card-kicker">Voice · Piano · Choir</p>
-              <h3>Educator</h3>
-              <p>Individual study, performance preparation, and imaginative musicianship for students from beginner through advanced levels.</p>
-              <span class="coming-label">Berklee graduate · RCM educator</span>
-            </div>
-          </article>
-          <article class="path-card path-stage reveal">
-            <span class="card-number">03</span>
-            <div class="card-icon" aria-hidden="true">☼</div>
-            <div class="card-copy">
-              <p class="card-kicker">Arrange · Record · Develop</p>
-              <h3>Producer</h3>
-              <p>ZCK Music Production helps songwriters and artists shape ideas into compelling, professionally produced recordings.</p>
-              <span class="coming-label">Artist development · Song demos</span>
-            </div>
-          </article>
+      <section class="artist-statement section">
+        <div class="artist-statement__heading reveal"><p class="eyebrow light">The artist</p><h2>Music without<br /><em>borders.</em></h2></div>
+        <div class="artist-statement__body reveal"><p class="statement-lead">Music carries memory, imagination, and human connection.</p><p>Born in Yerevan and shaped by musical lives in Greece, Boston, India, Europe, and New York, Christie brings classical training, jazz freedom, and a teacher’s instinct for connection to everything she creates.</p><p>Her work moves naturally between the concert stage, recording studio, classroom, and children’s choir—always centered on honest expression and the belief that music helps people find their own voice.</p><a class="artist-line-link" href="/about/">Read Christie’s full story <span>→</span></a></div>
+      </section>
+
+      <section class="selected-work section" aria-labelledby="work-title">
+        <div class="selected-work__intro reveal"><p class="eyebrow">Selected work</p><h2 id="work-title">Songs, stories,<br /><em>and worlds.</em></h2></div>
+        <div class="work-grid">
+          <a class="work-card work-card--album reveal" href="/music/"><span class="work-card__number">01</span><div><p>Studio album · 2019</p><h3>Le Rêve<br /><em>The Dream</em></h3><span>Latin Jazz · Bossa Nova · Fusion</span></div></a>
+          <a class="work-card work-card--songbird reveal" href="/songbird/"><span class="work-card__number">02</span><div><p>Children’s creative project</p><h3>Songbird</h3><span>Album · Book · Musical</span></div></a>
+          <a class="work-card work-card--stage reveal" href="/videos/"><span class="work-card__number">03</span><div><p>Live &amp; recorded</p><h3>Performance</h3><span>Voice · Piano · Composition</span></div></a>
         </div>
       </section>
 
-      <section class="feature section" id="music">
-        <div class="feature-image reveal">
-          <img class="album-art" src="/assets/le-reve-album.jpg" alt="Le Rêve — The Dream album cover featuring Christie Kanska and Zdenek Kansky" />
-          <div class="image-caption"><span>Studio album · 2019</span><strong>Le Rêve — The Dream</strong></div>
-        </div>
-        <div class="feature-copy reveal">
-          <p class="eyebrow">Featured recording</p>
-          <h2>A dream shaped in <em>Latin jazz.</em></h2>
-          <p><cite>Le Rêve — The Dream</cite> blends Latin Jazz, Bossa Nova, Fusion, and Christie’s own musical language. Its eleven tracks include her original instrumental “Le Rêve,” Zdenek Kansky’s “For Christie,” and new arrangements of beloved Brazilian standards.</p>
-          <p>The album features Christie on vocals and keys, Zdenek Kansky on electric and acoustic bass, and an international ensemble of jazz musicians.</p>
-          <div class="value-row" aria-label="Musical styles">
-            <span>Latin Jazz</span><i></i><span>Bossa Nova</span><i></i><span>Fusion</span>
-          </div>
-          <button class="button button-ink" type="button" data-story-button>Explore the album <span>→</span></button>
-        </div>
-      </section>
+      <section class="songbird-invitation section"><div class="songbird-invitation__copy reveal"><p class="eyebrow light">A new creative world</p><h2>Meet<br /><em>Songbird.</em></h2><p>A complete storytelling project where original songs grow into a book and musical—created to nurture courage, kindness, imagination, and the joy of finding your voice.</p><a class="button button-primary" href="/songbird/">Explore the project <span>→</span></a></div><div class="songbird-invitation__detail" aria-hidden="true">♪</div></section>
 
-      <section class="quote-band" aria-label="About Christie Kanska">
-        <div class="bird-line bird-line-left" aria-hidden="true"></div>
-        <blockquote class="reveal">“Christie captures her audience with her honesty and artistic mastery.”</blockquote>
-        <div class="bird-line bird-line-right" aria-hidden="true"></div>
-      </section>
-
-      <section class="values section" id="teaching" aria-labelledby="values-title">
-        <div class="values-copy reveal">
-          <p class="eyebrow">Music education</p>
-          <h2 id="values-title">Technique with<br /><em>imagination.</em></h2>
-          <p>Christie offers individually structured voice and piano instruction, helping every student build reliable technique, confidence, and a personal relationship with music.</p>
-        </div>
-        <div class="values-list">
-          <article class="value reveal"><span>01</span><div><h3>Voice</h3><p>Diaphragmatic breathing, vocal exercises, healthy execution, repertoire, stage performance, theatre, and audition preparation.</p></div></article>
-          <article class="value reveal"><span>02</span><div><h3>Piano</h3><p>Personalized lessons for beginners through advanced students, grounded in technique while encouraging interpretation and self-expression.</p></div></article>
-          <article class="value reveal"><span>03</span><div><h3>Whole musicianship</h3><p>Royal Conservatory curriculum and experience across Pop, R&amp;B, Jazz, Musical Theatre, Folk, and Classical music.</p></div></article>
-        </div>
-      </section>
-
-      <section class="creator section" id="production">
-        <div class="creator-signature reveal" aria-hidden="true">ZCK</div>
-        <div class="creator-content reveal">
-          <p class="eyebrow light">ZCK Music Production</p>
-          <h2>From first idea<br />to <em>finished record.</em></h2>
-          <p class="creator-lead">“We make lyric writers’ words come alive—and turn rough recordings into song demos ready to be heard.”</p>
-          <p>Founded by Christie Kanska and Zdenek Kansky, ZCK Music Production works with songwriters who write lyrics only as well as artists bringing complete songs. Its professional team develops music, arrangements, recordings, and release-ready creative materials.</p>
-          <div class="creator-credits">
-            <div><span>Creative development</span><strong>Songwriting &amp; arranging</strong></div>
-            <div><span>Studio</span><strong>Recording &amp; production</strong></div>
-            <div><span>Release support</span><strong>Artist development</strong></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact">
-        <div class="contact-inner reveal">
-          <p class="eyebrow">Management &amp; booking</p>
-          <h2>Let’s create<br /><em>something together.</em></h2>
-          <p>For performances, lessons, production, press, and creative collaborations, contact Christie Kanska and ZCK Music Production.</p>
-          <div class="contact-actions">
-            <a class="button button-primary" href="mailto:zckmusicproduction1@gmail.com">Email Christie <span>↗</span></a>
-            <a class="contact-phone" href="tel:+17742391173">774-239-1173</a>
-          </div>
-          <p class="contact-note">34 Hillcrest Ave · Yonkers, New York 10705</p>
-          <div class="social-links" aria-label="Christie Kanska social media">
-            <a href="https://www.youtube.com/@Christie119" target="_blank" rel="noopener">YouTube</a>
-            <a href="https://www.instagram.com/christiekanska/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.facebook.com/christie.kanska" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://www.linkedin.com/in/christie-kanska-221a6b2a/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-      </section>
+      <section class="contact section" id="contact"><div class="contact-inner reveal"><p class="eyebrow">Management &amp; booking</p><h2>Let’s create<br /><em>something together.</em></h2><p>For performances, lessons, production, press, and creative collaborations, contact Christie Kanska and ZCK Music Production.</p><div class="contact-actions"><a class="button button-primary" href="mailto:zckmusicproduction1@gmail.com">Email Christie <span>↗</span></a><a class="contact-phone" href="tel:+17742391173">774-239-1173</a></div><div class="social-links" aria-label="Christie Kanska social media"><a href="https://www.youtube.com/@Christie119" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/christiekanska/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/christie.kanska" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/christie-kanska-221a6b2a/" target="_blank" rel="noopener">LinkedIn</a></div></div></section>
     </main>
 
-    <footer class="site-footer">
-      <a class="brand footer-brand" href="/">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 62 52"><path d="M12 35c6-1 10-5 12-10-6 2-11 0-14-4 7 0 13-3 17-9 0 8 4 14 12 17 6 2 11 1 16-1-4 7-10 11-18 11H26c-7 0-12 3-15 8 0-5 0-8 1-12Z"/><circle cx="38" cy="25" r="2"/><path class="beak" d="m46 27 10 4-10 3Z"/></svg></span>
-        <span>SONG<span>bird</span></span>
-      </a>
-      <p>Vocalist, pianist, composer,<br />educator, and producer.</p>
-      <div class="footer-meta"><span>© <span data-year></span> Christie Kanska</span><span>Performance · Teaching · Production</span></div>
-    </footer>
-
-    <dialog class="story-dialog" data-story-dialog>
-      <button class="dialog-close" type="button" aria-label="Close album details" data-dialog-close>×</button>
-      <p class="eyebrow">Christie Kanska · 2019</p>
-      <h2>Le Rêve — The Dream</h2>
-      <img src="/assets/le-reve-album.jpg" alt="Le Rêve — The Dream album cover" />
-      <p>Eleven tracks of Latin Jazz, Bossa Nova, Fusion, and original music. Arranged by Christie Kanska and Zdenek Kansky, the record includes works associated with João Donato and Antônio Carlos Jobim alongside original compositions.</p>
-      <div class="dialog-links">
-        <a class="button button-ink" href="https://open.spotify.com/album/7odkqThKgoum5Uo6Jk0R0F" target="_blank" rel="noopener">Spotify <span>↗</span></a>
-        <a class="arrow-link" href="https://music.apple.com/us/album/the-dream/1452538566" target="_blank" rel="noopener">Apple Music <span>↗</span></a>
-      </div>
-    </dialog>
-
+    <footer class="site-footer artist-footer"><a class="artist-brand artist-brand--footer" href="/"><span class="artist-brand__name">Christie Kanska</span><span class="artist-brand__role">Artist · Composer</span></a><p>Vocalist, pianist, composer,<br />educator, and producer.</p><div class="footer-meta"><span>© <span data-year></span> Christie Kanska</span><span>Music · Story · Connection</span></div></footer>
     <script type="module" src="/script.js"></script>
   </body>
 </html>

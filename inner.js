@@ -2,6 +2,14 @@ const header = document.querySelector('[data-header]');
 const menuButton = document.querySelector('[data-menu-button]');
 const nav = document.querySelector('[data-nav]');
 
+if (nav && !nav.querySelector('a[href="/songbird/"]')) {
+  const musicLink = nav.querySelector('a[href="/music/"]');
+  const songbirdLink = document.createElement('a');
+  songbirdLink.href = '/songbird/';
+  songbirdLink.textContent = 'Songbird';
+  musicLink?.after(songbirdLink);
+}
+
 const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 36);
 updateHeader();
 window.addEventListener('scroll', updateHeader, { passive: true });
