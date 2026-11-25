@@ -38,3 +38,43 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 document.querySelectorAll('[data-year]').forEach((element) => { element.textContent = new Date().getFullYear(); });
+
+const galleryLinks = [...document.querySelectorAll('.gallery__link')];
+const lightbox = document.querySelector('[data-gallery-lightbox]');
+
+if (lightbox && galleryLinks.length) {
+  const preview = lightbox.querySelector('[data-gallery-preview]');
+  const caption = lightbox.querySelector('[data-gallery-caption]');
+  const count = lightbox.querySelector('[data-gallery-count]');
+  let currentIndex = 0;
+  let previousOverflow = '';
+
+  const showPhoto = (index) => {
+    currentIndex = (index + galleryLinks.length) % galleryLinks.length;
+    const link = galleryLinks[currentIndex];
+    preview.src = link.href;
+    preview.alt = link.querySelector('img').alt;
+    caption.textContent = link.closest('figure').querySelector('figcaption')?.textContent || preview.alt;
+    count.textContent = `${currentIndex + 1} / ${galleryLinks.length}`;
+  };
+
+  galleryLinks.forEach((link, index) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    showPhoto(index);
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    lightbox.showModal();
+  }));
+
+  lightbox.querySelector('[data-gallery-close]').addEventListener('click', () => lightbox.close());
+  lightbox.querySelector('[data-gallery-prev]').addEventListener('click', () => showPhoto(currentIndex - 1));
+  lightbox.querySelector('[data-gallery-next]').addEventListener('click', () => showPhoto(currentIndex + 1));
+  lightbox.addEventListener('close', () => { document.body.style.overflow = previousOverflow; });
+  lightbox.addEventListener('click', (event) => { if (event.target === lightbox) lightbox.close(); });
+
+  document.addEventListener('keydown', (event) => {
+    if (!lightbox.open) return;
+    if (event.key === 'ArrowLeft') { event.preventDefault(); showPhoto(currentIndex - 1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); showPhoto(currentIndex + 1); }
+  });
+}
